@@ -26,3 +26,7 @@
 *.exe
 *.out
 *.app
+
+# Misc
+pi/partA/main
+*.bc
