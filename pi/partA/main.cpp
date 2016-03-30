@@ -86,20 +86,27 @@ void parseCallGraph() {
 }
 
 void calculateConfidences() {
-  for (auto &edgeEntry : edges) {
-    pair<string, string> fnPair = edgeEntry.first;
-    EdgeData* edgeData = &edgeEntry.second;
+  for (map<pair<string, string>, EdgeData>::iterator it = edges.begin(); it != edges.end(); ++it) {
+    pair<string, string> fnPair = it->first;
+    EdgeData* edgeData = &it->second;
     edgeData->confidenceFirst = (edgeData->support / (float)nodes[fnPair.first].support) * 100;
     edgeData->confidenceSecond = (edgeData->support / (float)nodes[fnPair.second].support) * 100;
   }
 }
 
 void findBugs() {
-  for (auto const &scopeEntry : scopes) {
-    string scopeName = scopeEntry.first;
-    const set<string>* scopeFuncs = &scopeEntry.second;
-    for (string const &scopeFunc : *scopeFuncs) { // For each function in the scope
-      for (string const &siblingFunc : nodes[scopeFunc].siblings) { // For each of the scope function's siblings
+  for (map<string, set<string> >::iterator it = scopes.begin(); it != scopes.end(); ++it) {
+    string scopeName = it->first;
+    const set<string>* scopeFuncs = &it->second;
+
+    // For each function in the scope
+    for (set<string>::iterator scopeIt = scopeFuncs->begin(); scopeIt != scopeFuncs->end(); ++scopeIt) {
+      string scopeFunc = *scopeIt;
+      const set<string>* siblings = &nodes[scopeFunc].siblings;
+
+      // For each of the scope function's siblings
+      for (set<string>::iterator sibsIt = siblings->begin(); sibsIt != siblings->end(); ++sibsIt) {
+        string siblingFunc = *sibsIt;
         pair<string, string> edgeKey = makeFunctionPair(scopeFunc, siblingFunc);
         EdgeData* edgeData = &edges[edgeKey];
         float confidence = scopeFunc < siblingFunc ? edgeData->confidenceFirst : edgeData->confidenceSecond;
