@@ -1,0 +1,60 @@
+timer                                          ms      calls
+------------------------------------------------------------
+cov-commit-defects                           6267          1
+  authenticate_rcp1_style                      24          1
+  set_working_domain                           46          1
+  send_analysis_and_build_metrics              94          2
+  send_defects_v3                             345          2
+    HashKVS find                                0          6
+    decompress events                           0          6
+    xfer events                                11          6
+  start_determining_blame_v1                    5          1
+  send_snapshot_info                          184          1
+  send_analysis_settings_v1                     8          1
+  send_collectable_analysis_metrics            10          1
+  send_sourcefile_descriptions_v3            2820          1
+    retrieve_string_from_table                  0          2
+  send_file_contents_dev                       72          1
+    retrieve_string_from_table                  0          2
+  send_xrefs_v2                              1453          1
+  send_cva_files_v1                             0          1
+  send_functions_v1                           386          1
+  send_output_files_v1                         68          1
+  send_coverage_md5                             1          1
+  send_scm_change_record_md5s                   2          1
+  send_scm_annotation_md5s                      2          1
+  send_impact_annotation_md5s                   1          1
+  send_analysis_summaries_md5_v1              119          1
+  send_analysis_summaries_contents_v1         263          1
+    HashKVS find                                0         64
+  send_desktop_analysis_data_v1                14          1
+  (left over)                                 350
+
+activity                                       ms      calls
+------------------------------------------------------------
+cov-commit-defects                           6267          1
+authenticate_rcp1_style                        24          1
+set_working_domain                             46          1
+send_analysis_and_build_metrics                94          2
+send_defects_v3                               345          2
+HashKVS find                                    0         70
+decompress events                               0          6
+xfer events                                    11          6
+start_determining_blame_v1                      5          1
+send_snapshot_info                            184          1
+send_analysis_settings_v1                       8          1
+send_collectable_analysis_metrics              10          1
+send_sourcefile_descriptions_v3              2820          1
+retrieve_string_from_table                      0          4
+send_file_contents_dev                         72          1
+send_xrefs_v2                                1453          1
+send_cva_files_v1                               0          1
+send_functions_v1                             386          1
+send_output_files_v1                           68          1
+send_coverage_md5                               1          1
+send_scm_change_record_md5s                     2          1
+send_scm_annotation_md5s                        2          1
+send_impact_annotation_md5s                     1          1
+send_analysis_summaries_md5_v1                119          1
+send_analysis_summaries_contents_v1           263          1
+send_desktop_analysis_data_v1                  14          1

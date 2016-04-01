@@ -1,0 +1,6 @@
+[LOG] run: /usr/local/cov-analysis-linux64-8.0.0/bin/cov-format-errors --dir /home/v2kovac/coverity-idirs/g32_myproject --json-output-v4 /home/v2kovac/coverity-idirs/g32_myproject/output/cov-blame/errors.json --outputdir /home/v2kovac/coverity-idirs/g32_myproject/output
+[LOG] /usr/local/cov-analysis-linux64-8.0.0/bin/cov-format-errors exits successfully.
+[INFO] Computing likely owner for 10262 [b1a1909b98c9ebca11e16856572768a9]:
+[INFO] 	default_component_owner: none
+[INFO] Computing likely owner for 10260 [2d2778794be3be8310aab0e35512d876]:
+[INFO] 	default_component_owner: none

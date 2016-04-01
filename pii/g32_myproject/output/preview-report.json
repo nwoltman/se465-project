@@ -1,0 +1,113 @@
+{
+  "header" : {
+    "format" : "commit preview report",
+    "version" : 2
+  },
+  "analysisInfo" : {
+    "ownerAssignmentRule" : "default_component_owner",
+    "comparisonSnapshotId" : null,
+    "reportTimestamp" : "2016-03-30T12:34:31.940Z",
+    "user" : "admin",
+    "command" : "/usr/local/cov-analysis-linux64-8.0.0/bin/cov-analyze --dir /home/v2kovac/coverity-idirs/g32_myproject --disable-webapp-security --strip-path /home/v2kovac/se465-project/pi/partA --all --enable-fb"
+  },
+  "issueInfo" : [ {
+    "cid" : 10260,
+    "mergeKey" : "2d2778794be3be8310aab0e35512d876",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-03-30T12:34:31.940Z",
+    "occurrences" : [ {
+      "checker" : "STREAM_FORMAT_STATE",
+      "file" : "/main.cpp",
+      "function" : "_Z8findBugsv",
+      "extra" : "cout",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 127,
+      "mainEventDescription" : "Changing format state of stream \"std::cout\" for categories floatfield, precision without later restoring it.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10261,
+    "mergeKey" : "214eafbdd4dbaa6b5d088260041b5991",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-03-30T12:34:31.940Z",
+    "occurrences" : [ {
+      "checker" : "UNCAUGHT_EXCEPT",
+      "file" : "/main.cpp",
+      "function" : "main",
+      "extra" : "allocator",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 129,
+      "mainEventDescription" : "In function \"main(int, char **)\" an exception of type \"std::basic_string<char, std::char_traits<char>, std::allocator<char> >\" is thrown and never caught.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    }, {
+      "checker" : "UNCAUGHT_EXCEPT",
+      "file" : "/main.cpp",
+      "function" : "main",
+      "extra" : "allocator",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 129,
+      "mainEventDescription" : "In function \"main(int, char **)\" an exception of type \"std::basic_string<char, std::char_traits<char>, std::allocator<char> >\" is thrown and never caught.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : null
+  }, {
+    "cid" : 10262,
+    "mergeKey" : "b1a1909b98c9ebca11e16856572768a9",
+    "presentInComparisonSnapshot" : false,
+    "firstDetectedDateTime" : "2016-03-30T12:34:31.940Z",
+    "occurrences" : [ {
+      "checker" : "UNINIT_CTOR",
+      "file" : "/main.cpp",
+      "function" : "_ZN8EdgeDataC9Ev",
+      "extra" : "",
+      "mergeWithLowercaseFile" : false,
+      "subcategory" : "none",
+      "mainEventLineNumber" : 24,
+      "mainEventDescription" : "Non-static class member \"confidenceSecond\" is not initialized in this constructor nor in any functions that it calls.",
+      "componentName" : "Other",
+      "componentDefaultOwner" : null,
+      "componentDefaultOwnerLdapServer" : null
+    } ],
+    "triage" : {
+      "severity" : "Unspecified",
+      "owner" : null,
+      "externalReference" : null,
+      "legacy" : "False",
+      "fixTarget" : "Untargeted",
+      "action" : "Undecided",
+      "classification" : "Unclassified"
+    },
+    "customTriage" : { },
+    "ownerLdapServerName" : null
+  } ]
+}

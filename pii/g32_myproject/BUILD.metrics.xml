@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coverity SYSTEM "config.dtd">
+<coverity>
+
+<metrics>
+    <metric>
+        <name>time</name>
+        <value>1</value>
+    </metric>
+    <metric>
+        <name>args</name>
+        <value>/usr/local/cov-analysis-linux64-8.0.0/bin/cov-build --dir /home/v2kovac/coverity-idirs/g32_myproject --delete-stale-tus</value>
+    </metric>
+    <metric>
+        <name>host</name>
+        <value>ecelinux5.uwaterloo.ca</value>
+    </metric>
+    <metric>
+        <name>short-platform</name>
+        <value>linux64</value>
+    </metric>
+    <metric>
+        <name>platform</name>
+        <value>Linux 3.2.77-1.el5.elrepo x86_64</value>
+    </metric>
+    <metric>
+        <name>ident</name>
+        <value>8.0.0 (build 2c247ff7c4 p-jasper-push-24789.298)</value>
+    </metric>
+    <metric>
+        <name>user</name>
+        <value>v2kovac</value>
+    </metric>
+    <metric>
+        <name>cwd</name>
+        <value>/home/v2kovac/se465-project/pi/partA</value>
+    </metric>
+    <metric>
+        <name>config</name>
+        <value>/usr/local/cov-analysis-linux64-8.0.0/config/coverity_config.xml</value>
+    </metric>
+    <metric>
+        <name>intermediatedir</name>
+        <value>/home/v2kovac/coverity-idirs/g32_myproject</value>
+    </metric>
+    <metric>
+        <name>outputdir</name>
+        <value>/home/v2kovac/coverity-idirs/g32_myproject/output</value>
+    </metric>
+    <metric>
+        <name>emitdir</name>
+        <value>/home/v2kovac/coverity-idirs/g32_myproject/emit</value>
+    </metric>
+    <metric>
+        <name>force</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>cygwin</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>failures</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>successes</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>uptodate</name>
+        <value>1</value>
+    </metric>
+    <metric>
+        <name>cs-webapps-detected</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>cs-webapp-successes</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>cs-webapp-compilation-secs</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>buildcmd</name>
+        <value>make</value>
+    </metric>
+</metrics>
+</coverity>

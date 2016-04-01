@@ -1,0 +1,78 @@
+<error>
+<domain>STATIC_C</domain>
+<lang>C++</lang>
+<checker>UNCAUGHT_EXCEPT</checker>
+<file>/home/v2kovac/se465-project/pi/partA/main.cpp</file>
+<function>main</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<main>true</main>
+<tag>root_function</tag>
+<description>{CovLStrv2{{t{In function {0} an exception of type {1} is thrown and never caught.}{{code{main(int, char **)}}}{{code{std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;}}}}}}</description>
+<line>129</line>
+</event>
+<event>
+<tag>fun_call_w_exception</tag>
+<description>{CovLStrv2{{t{Called function throws an exception of type {0}.}{{code{std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;}}}}}}</description>
+<line>135</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>/home/v2kovac/se465-project/pi/partA/main.cpp</file>
+<function>_Z14parseCallGraphv</function>
+<key>7a02cf024759c90009d987412f93236f</key>
+<id>0</id>
+</model_ptr>
+</event>
+<extra>allocator</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Error handling issues</category>
+<impact>Medium</impact>
+<type>Uncaught exception</type>
+<cwe>248</cwe>
+<localEffect>If the exception is ever thrown, the program will crash.</localEffect>
+<longDescription>A C++ exception is thrown but never caught</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>
+<error>
+<domain>STATIC_C</domain>
+<lang>C++</lang>
+<checker>UNCAUGHT_EXCEPT</checker>
+<file>/home/v2kovac/se465-project/pi/partA/main.cpp</file>
+<function>main</function>
+<score>100</score>
+<ordered>false</ordered>
+<event>
+<main>true</main>
+<tag>root_function</tag>
+<description>{CovLStrv2{{t{In function {0} an exception of type {1} is thrown and never caught.}{{code{main(int, char **)}}}{{code{std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;}}}}}}</description>
+<line>129</line>
+</event>
+<event>
+<tag>fun_call_w_exception</tag>
+<description>{CovLStrv2{{t{Called function throws an exception of type {0}.}{{code{std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt;}}}}}}</description>
+<line>137</line>
+<model_ptr>
+<module>module</module>
+<property>prop</property>
+<file>/home/v2kovac/se465-project/pi/partA/main.cpp</file>
+<function>_Z8findBugsv</function>
+<key>a6d9bb2d764b7b6081a9ab50560dd056</key>
+<id>0</id>
+</model_ptr>
+</event>
+<extra>allocator</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Error handling issues</category>
+<impact>Medium</impact>
+<type>Uncaught exception</type>
+<cwe>248</cwe>
+<localEffect>If the exception is ever thrown, the program will crash.</localEffect>
+<longDescription>A C++ exception is thrown but never caught</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>

@@ -1,0 +1,41 @@
+<error>
+<domain>STATIC_C</domain>
+<lang>C++</lang>
+<checker>UNINIT_CTOR</checker>
+<file>/home/v2kovac/se465-project/pi/partA/main.cpp</file>
+<function>_ZN8EdgeDataC9Ev</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>member_decl</tag>
+<description>{CovLStrv2{{t{Class member declaration for {0}.}{{code{confidenceFirst}}}}}}</description>
+<line>22</line>
+</event>
+<event>
+<tag>uninit_member</tag>
+<description>{CovLStrv2{{t{Non-static class member {0} is not initialized in this constructor nor in any functions that it calls.}{{code{confidenceFirst}}}}}}</description>
+<line>24</line>
+</event>
+<event>
+<tag>member_decl</tag>
+<description>{CovLStrv2{{t{Class member declaration for {0}.}{{code{confidenceSecond}}}}}}</description>
+<line>23</line>
+</event>
+<event>
+<main>true</main>
+<tag>uninit_member</tag>
+<description>{CovLStrv2{{t{Non-static class member {0} is not initialized in this constructor nor in any functions that it calls.}{{code{confidenceSecond}}}}}}</description>
+<line>24</line>
+</event>
+<extra></extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>Uninitialized members</category>
+<impact>Medium</impact>
+<type>Uninitialized scalar field</type>
+<cwe>457</cwe>
+<localEffect>The field will contain an arbitrary value left over from earlier computations.</localEffect>
+<longDescription>A scalar field is not initialized by the constructor</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>

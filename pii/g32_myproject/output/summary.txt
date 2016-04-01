@@ -1,0 +1,13 @@
+/usr/local/cov-analysis-linux64-8.0.0/bin/cov-analyze --dir /home/v2kovac/coverity-idirs/g32_myproject --disable-webapp-security --strip-path /home/v2kovac/se465-project/pi/partA --all --enable-fb 
+Analysis summary report:
+------------------------
+Files analyzed                 : 29
+Total LoC input to cov-analyze : 38042
+Functions analyzed             : 374
+Classes/structs analyzed       : 85
+Paths analyzed                 : 1053
+Time taken by analysis         : 00:00:02
+Defect occurrences found       : 4 Total
+                                 1 STREAM_FORMAT_STATE
+                                 2 UNCAUGHT_EXCEPT
+                                 1 UNINIT_CTOR

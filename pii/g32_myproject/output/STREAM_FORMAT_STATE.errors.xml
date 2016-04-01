@@ -1,0 +1,170 @@
+<error>
+<domain>STATIC_C</domain>
+<lang>C++</lang>
+<checker>STREAM_FORMAT_STATE</checker>
+<file>/home/v2kovac/se465-project/pi/partA/main.cpp</file>
+<function>_Z8findBugsv</function>
+<score>100</score>
+<ordered>true</ordered>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{it != scopes.end()}}}}}}</description>
+<line>98</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{scopeIt != scopeFuncs-&gt;end()}}}}}}</description>
+<line>103</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{sibsIt != siblings-&gt;end()}}}}}}</description>
+<line>108</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{edgeData-&gt;support &gt;= t_support}}}}}}</description>
+<line>113</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{confidence &gt;= t_confidence}}}}}}</description>
+<line>113</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>cond_true</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking true branch}{{code{scopeFuncs-&gt;find(siblingFunc) == scopeFuncs-&gt;end()}}}}}}</description>
+<line>113</line>
+<path_event></path_event>
+</event>
+<event>
+<tag>format_changed</tag>
+<description>{CovLStrv2{{t{{0} changes the format state of {1} for category {2}.}{{code{fixed}}}{{code{std::cout}}}{floatfield}}}}</description>
+<line>118</line>
+</event>
+<event>
+<tag>format_changed</tag>
+<description>{CovLStrv2{{t{{0} changes the format state of {1} for category {2}.}{{code{setprecision}}}{{code{std::cout}}}{precision}}}}</description>
+<line>118</line>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>124</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>108</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{sibsIt != siblings-&gt;end()}}}}}}</description>
+<line>108</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>124</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>125</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>103</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{scopeIt != scopeFuncs-&gt;end()}}}}}}</description>
+<line>103</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>125</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop</tag>
+<description>{CovLStrv2{{t{Jumping back to the beginning of the loop}}}}</description>
+<line>126</line>
+<path_event>
+<jump>true</jump>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>loop_begin</tag>
+<description>{CovLStrv2{{t{Jumped back to beginning of loop}}}}</description>
+<line>98</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<tag>cond_false</tag>
+<description>{CovLStrv2{{t{Condition {0}, taking false branch}{{code{it != scopes.end()}}}}}}</description>
+<line>98</line>
+<path_event>
+<jump>true</jump>
+</path_event>
+</event>
+<event>
+<tag>loop_end</tag>
+<description>{CovLStrv2{{t{Reached end of loop}}}}</description>
+<line>126</line>
+<path_event>
+<suppressible>true</suppressible>
+</path_event>
+</event>
+<event>
+<main>true</main>
+<tag>end_of_path</tag>
+<description>{CovLStrv2{{t{Changing format state of stream {0} for categories {1} without later restoring it.}{{code{std::cout}}}{floatfield, precision}}}}</description>
+<line>127</line>
+</event>
+<extra>cout</extra>
+<subcategory>none</subcategory>
+<typePropertiesGroup>
+<category>API usage errors</category>
+<impact>Medium</impact>
+<type>Not restoring ostream format</type>
+<localEffect>The next output operation may not expect the stream format state being altered, resulting in incorrectly formatted output.</localEffect>
+<longDescription>Not restoring the stream format state of an ostream</longDescription>
+<qualityKind>true</qualityKind>
+</typePropertiesGroup>
+</error>

@@ -1,0 +1,21 @@
+timer                                ms      calls
+--------------------------------------------------
+cov-build                           989          1
+  add_string_to_table                 1         65
+  addEmitFileName                     0          1
+    addEmitFileName                   0          1
+      addEmitFileName                 0          1
+        addEmitFileName               0          1
+          addEmitFileName             0          1
+            addEmitFileName           0          1
+  Prepare capture                     1          1
+  Running build command             826          1
+  (left over)                       161
+
+activity                             ms      calls
+--------------------------------------------------
+cov-build                           989          1
+add_string_to_table                   1         65
+addEmitFileName                       0          6
+Prepare capture                       1          1
+Running build command               826          1

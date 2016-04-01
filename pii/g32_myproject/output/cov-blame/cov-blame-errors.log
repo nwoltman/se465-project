@@ -1,0 +1,14 @@
+[WARNING] There was 1 defect whose owner was not assigned due to failure to locate the merge key in the preview report. See /home/v2kovac/coverity-idirs/g32_myproject/output/cov-blame/cov-blame-errors.log for details, and please also send the files in that directory to Coverity Support.
+----------------------------------------------------------------------
+domain: C/C++
+checker: UNCAUGHT_EXCEPT
+file: /home/v2kovac/se465-project/pi/partA/main.cpp
+function: main
+main_event_line: 129
+main_event_tag: root_function
+main_event_description: In function "main(int, char **)" an exception of type "std::basic_string<char, std::char_traits<char>, std::allocator<char> >" is thrown and never caught.
+ordered: 0
+extra: allocator
+subcategory: none
+cov_blame_merge_key: 4b7cd654dba4eaae774febac90830ec3
+----------------------------------------------------------------------
